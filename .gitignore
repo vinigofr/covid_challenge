@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Add the package-lock.json file to the list of files to ignore
+package-lock.json
