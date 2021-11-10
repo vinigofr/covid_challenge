@@ -1,5 +1,18 @@
-import { createContext } from 'react';
+import React from 'react';
+import Context from './Context';
 
-const Context = createContext();
+function Provider({ children }) {
+  const [tasks, setTasks] = React.useState();
 
-export default Context;
+  const context = {
+    tasks, setTasks,
+  };
+
+  return (
+    <Context.Provider value={context}>
+      {children}
+    </Context.Provider>
+  );
+}
+
+export default Provider;
