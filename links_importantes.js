@@ -6,3 +6,6 @@
 
 // O parâmetro -it no docker-compose é para que o container rode em background, nos possibilitando
 // fazer outras coisas enquanto o container está rodando.
+
+// Acessar o container via bash:
+// https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
