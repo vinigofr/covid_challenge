@@ -1,7 +1,8 @@
 import React from 'react';
 import Context from '../Context/Context';
 
-function SearchOptions() {
+// eslint-disable-next-line react/prop-types
+function SearchOptions({ maxDays }) {
   const [day, setDay] = React.useState('');
   const { setCurrentDay } = React.useContext(Context);
 
@@ -10,7 +11,7 @@ function SearchOptions() {
       <input
         type="number"
         min="1"
-        // max={maxDays}
+        max={maxDays}
         onChange={(e) => setDay(e.target.value)}
         placeholder="Dia(s)"
       />
