@@ -13,7 +13,7 @@ function SearchOptions({ maxDays }) {
         min="1"
         max={maxDays}
         onChange={(e) => setDay(e.target.value)}
-        placeholder="Dia(s)"
+        placeholder={`Max de dias: ${maxDays}`}
       />
       <button
         type="button"
