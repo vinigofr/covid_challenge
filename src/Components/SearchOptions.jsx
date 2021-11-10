@@ -16,7 +16,7 @@ function SearchOptions() {
       />
       <button
         type="button"
-        onClick={() => setCurrentDay(day)}
+        onClick={() => setCurrentDay(Number(day))}
       >
         Buscar
       </button>
