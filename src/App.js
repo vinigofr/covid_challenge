@@ -8,6 +8,8 @@ function App() {
     <BrowserRouter>
       <Provider>
         <Routes>
+          {/* O modo de componentização mudou
+          https://stackoverflow.com/questions/69854011/matched-leaf-route-at-location-does-not-have-an-element */}
           <Route exact path="/" element={<Main />} />
         </Routes>
       </Provider>
