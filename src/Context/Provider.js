@@ -4,8 +4,9 @@ import Context from './Context';
 
 function Provider({ children }) {
   const [data, setData] = React.useState([]);
+  const [currentDay, setCurrentDay] = React.useState(null);
   const context = {
-    data, setData,
+    data, setData, currentDay, setCurrentDay,
   };
 
   return (

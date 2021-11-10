@@ -9,7 +9,7 @@ function SearchOptions() {
         type="number"
         min="1"
         // max={maxDays}
-        onChange={() => ''}
+        onChange={(e) => setDay(e.target.value)}
         placeholder="Dia(s)"
       />
       <button
