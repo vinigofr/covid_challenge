@@ -3,3 +3,6 @@
 
 // Fazer build e run no docker
 // https://blog.codeexpertslearning.com.br/dockerizando-uma-aplica%C3%A7%C3%A3o-react-js-f6a22e93bc5d
+
+// O parâmetro -it no docker-compose é para que o container rode em background, nos possibilitando
+// fazer outras coisas enquanto o container está rodando.
