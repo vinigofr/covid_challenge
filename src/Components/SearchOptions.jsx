@@ -1,8 +1,10 @@
 import React from 'react';
+import Context from '../Context/Context';
 
 function SearchOptions() {
   const [day, setDay] = React.useState('');
-  // set estado global
+  const { setCurrentDay } = React.useContext(Context);
+
   return (
     <div>
       <input
@@ -14,7 +16,7 @@ function SearchOptions() {
       />
       <button
         type="button"
-        onClick={() => ''}
+        onClick={() => setCurrentDay(day)}
       >
         Buscar
       </button>
