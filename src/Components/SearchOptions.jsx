@@ -1,5 +1,6 @@
 import React from 'react';
 import Context from '../Context/Context';
+import verifyDay from '../Helpers/VerifyDay';
 
 // eslint-disable-next-line react/prop-types
 function SearchOptions({ maxDays }) {
@@ -11,13 +12,21 @@ function SearchOptions({ maxDays }) {
       <input
         type="number"
         min="1"
+        value={day}
         max={maxDays}
         onChange={(e) => setDay(e.target.value)}
         placeholder={`Max de dias: ${maxDays}`}
       />
       <button
         type="button"
-        onClick={() => setCurrentDay(Number(day))}
+        onClick={() => {
+          if (verifyDay(day, maxDays)) {
+            setCurrentDay(day);
+          } else {
+            alert(`Dia invalido! Digite dias entre 1 e ${maxDays}`);
+          }
+          setDay('');
+        }}
       >
         Buscar
       </button>
