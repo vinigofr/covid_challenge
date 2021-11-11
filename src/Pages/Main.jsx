@@ -1,5 +1,6 @@
 import React from 'react';
 import Context from '../Context/Context';
+import '../generalStyles.css';
 
 // Components \/
 import Header from '../Components/Header';
