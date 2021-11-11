@@ -5,13 +5,9 @@ import {
   act,
   render,
   screen,
-  fireEvent,
-  cleanup,
-  waitForElementToBeRemoved,
   waitFor,
 } from '@testing-library/react';
 import App from '../App';
-import Main from '../Pages/Main';
 import covidCasesData from './data.json';
 
 describe('Testa o componente Main.jsx, que faz parte da tela inicial', () => {
