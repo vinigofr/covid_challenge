@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import Context from './Context';
 
 function Provider({ children }) {
-  const context = {};
+  const [data, setData] = React.useState([]);
+  const [currentDay, setCurrentDay] = React.useState(null);
+  const context = {
+    data, setData, currentDay, setCurrentDay,
+  };
+
   return (
     <Context.Provider value={context}>
       {children}
