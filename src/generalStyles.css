@@ -18,7 +18,7 @@ header {
   margin-left: 10px;
 }
 
-/*  */
+/* ResultSection.jsx */
 .result-section {
   display: flex;
   flex-direction: column;
@@ -28,4 +28,33 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   min-height: 300px;
+}
+
+/* Input e botão */
+.input-number {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  margin: 10px;
+}
+
+.search-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+  color: #000000;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active {
+  transform: scale(0.9);
 }

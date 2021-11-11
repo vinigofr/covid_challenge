@@ -11,6 +11,7 @@ function SearchOptions({ maxDays }) {
     <div>
       <input
         data-testid="day-input"
+        className="input-number"
         type="number"
         min="1"
         value={day}
@@ -20,6 +21,7 @@ function SearchOptions({ maxDays }) {
       />
       <button
         type="button"
+        className="search-button"
         onClick={() => {
           if (verifyDay(day, maxDays)) {
             setCurrentDay(day);
