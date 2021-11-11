@@ -25,6 +25,8 @@ JavaScript ES6,
 
 4. Ter o [Docker CE](https://docs.docker.com/engine/install/) instalado.
 
+5. Ter o [Docker Compose](https://docs.docker.com/compose/) instalado.
+
 #### Observação: Todas os requisitos acima possuem várias formas de instalação. Atente-se às documentações e verifique se está tudo funcionando corretamente antes de prosseguir.
 ------------
 ## Iniciando o projeto localmente:
