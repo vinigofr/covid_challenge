@@ -17,6 +17,8 @@ module.exports = {
   plugins: [
     'react',
   ],
+  // https://stackoverflow.com/questions/42250257/disable-eslint-rules-for-folder
+  ignorePatterns: ['src/Tests/*'], // <<< ignore all files in test folder
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
