@@ -10,6 +10,7 @@ function SearchOptions({ maxDays }) {
   return (
     <div>
       <input
+        data-testid="day-input"
         type="number"
         min="1"
         value={day}
