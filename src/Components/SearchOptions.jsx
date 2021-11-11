@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Context from '../Context/Context';
 import verifyDay from '../Helpers/VerifyDay';
 
-// eslint-disable-next-line react/prop-types
 function SearchOptions({ maxDays }) {
   const [day, setDay] = React.useState('');
   const { setCurrentDay } = React.useContext(Context);
@@ -35,3 +35,7 @@ function SearchOptions({ maxDays }) {
 }
 
 export default SearchOptions;
+
+SearchOptions.propTypes = {
+  maxDays: PropTypes.number.isRequired,
+};

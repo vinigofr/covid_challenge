@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import SearchOptions from './SearchOptions';
 import Context from '../Context/Context';
 
@@ -35,3 +35,7 @@ function ResultSection({ data }) {
 }
 
 export default ResultSection;
+
+ResultSection.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
