@@ -1,4 +1,4 @@
-# Projeto Ebyrt ( Todo List ) | Projeto ainda em desenvolvimento!
+# Projeto D3_Challenge - COVID-19 no mundo.
 ------------
 ## Tecnologias utilizadas no desenvolvimento:
 ```
