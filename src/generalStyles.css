@@ -58,3 +58,26 @@ header {
 .search-button:active {
   transform: scale(0.9);
 }
+
+/* Tabela */
+table {
+  width: 90%;
+  margin: 20px auto;
+}
+
+table:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  transition: 0.5s;
+}
+
+table:not(:hover) {
+  transition: 0.2s;
+}
+
+table, th, td {
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
