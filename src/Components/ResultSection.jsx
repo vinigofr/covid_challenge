@@ -16,7 +16,7 @@ function ResultSection({ data }) {
           <tr>
             <th>N. do dia</th>
             <th>Data</th>
-            <th>Casos</th>
+            <th>Casos totais</th>
             <th>Novos</th>
           </tr>
           {itemsToRender
