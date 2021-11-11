@@ -21,7 +21,7 @@ function ResultSection({ data }) {
           </tr>
           {itemsToRender
             .map(({ date, total_cases: totalCases, new_cases: newCases }, index) => (
-              <tr>
+              <tr data-testid="covid-daily-data" key={`${date} - ${totalCases}`}>
                 <td>{index + 1}</td>
                 <td>{date}</td>
                 <td>{totalCases}</td>
