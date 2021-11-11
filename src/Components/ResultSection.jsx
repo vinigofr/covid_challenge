@@ -11,8 +11,8 @@ function ResultSection({ data }) {
     <div className="result-section">
       <SearchOptions maxDays={data.length} />
       <h1>Faça uma consulta acima, os resultados aparecerão abaixo:</h1>
-      <div>
-        <table>
+      <table>
+        <thead>
           <tr>
             <th>N. do dia</th>
             <th>Data</th>
@@ -21,15 +21,15 @@ function ResultSection({ data }) {
           </tr>
           {itemsToRender
             .map(({ date, total_cases: totalCases, new_cases: newCases }, index) => (
-              <tr>
+              <tr data-testid="covid-daily-data" key={`${date} - ${totalCases}`}>
                 <td>{index + 1}</td>
                 <td>{date}</td>
                 <td>{totalCases}</td>
                 <td>{newCases}</td>
               </tr>
             ))}
-        </table>
-      </div>
+        </thead>
+      </table>
     </div>
   );
 }
