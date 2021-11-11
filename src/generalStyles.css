@@ -1,0 +1,19 @@
+header {
+  color: #e5e5e5;
+  display: flex;
+  background-color: #000000;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.title-header {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.subtitle-header {
+  font-weight: bold;
+  margin-left: 10px;
+}
