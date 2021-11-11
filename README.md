@@ -36,16 +36,16 @@ JavaScript ES6,
 
 4. Ao baixar, digite no terminal `cd d3_challenge`, você poderá observar os arquivos do projeto. (src, package.json...).
 
-4. Precisamos criar o Container onde ficará nosso servidor React. Ele será criado a partir do arquivo `Dockerfile` que se encontra dentro da pasta do projeto.
+5. Precisamos criar o Container onde ficará nosso servidor React. Ele será criado a partir do arquivo `Dockerfile` que se encontra dentro da pasta do projeto.
 
-5. Já dentro da pasta `d3_challenge` digite: `sudo docker-compose up -d --build`. Este comando instalará todas as depeendências necessárias para iniciar o projeto em um container docker.
+6. Já dentro da pasta `d3_challenge` digite: `sudo docker-compose up -d --build`. Este comando instalará todas as dependências necessárias para iniciar o projeto em um container docker.
 
-6. Se tudo ocorrer corretamente, você verá essa seguinte mensagem no terminal:
+7. Se tudo ocorrer corretamente, você verá essa seguinte mensagem no terminal:
 ![Sucesso na containerização](https://github.com/vinigofr/d3_challenge/blob/documentacao/success.png)
 
-6. Após a execução do comando do passo 5 terminar, um servidor local abrirá no endereço: http://localhost:3001 (O Docker está consumindo a porta 3000 localmente e nos disponibiliza a 3001).
+8. Após a execução do comando do passo 5 terminar, um servidor local abrirá no endereço: http://localhost:3001 (O Docker está consumindo a porta 3000 localmente e nos disponibiliza a 3001).
 
-7. Quando tentar acessar a página, pode aparecer um recado do navegador dizendo que o conteúdo não está disponível. Isso provavelmente acontece porquê o `npm start` do script ainda está processando a aplicação.
+9. Quando tentar acessar a página, pode aparecer um recado do navegador dizendo que o conteúdo não está disponível. Isso provavelmente acontece porquê o `npm start` do script ainda está processando a aplicação.
 
 ------------
 
@@ -67,4 +67,4 @@ Pode ser que em outras distribuições Linux o `sh` seja substituído por `/bin/
 
 Observação interessante: Graças ao Docker, o node_modules que comumente fica na raiz do projeto, agora está dentro do container docker.
 
-Ḿuito obrigado pela oportunidade, foi um prazer imenso realizar este projeto.
+Muito obrigado pela oportunidade, foi um prazer imenso realizar este projeto.
