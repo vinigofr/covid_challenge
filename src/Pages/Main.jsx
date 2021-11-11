@@ -18,7 +18,7 @@ function Main() {
         setData(OwidData.OWID_WRL.data);
         setLoad(false);
       })
-      .catch((e) => console.log(e));
+      .catch(() => alert('Erro ao carregar dados'));
   }, []);
 
   return (
