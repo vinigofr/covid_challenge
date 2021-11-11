@@ -63,6 +63,8 @@ Pode ser que em outras distribuições Linux o `sh` seja substituído por `/bin/
 5. O segundo comando será o `npm run test-coverage`. Ele deve retornar a porcentagem de cobertura dos testes, que é de 100%:
 ![100% de cobertura](https://github.com/vinigofr/d3_challenge/blob/documentacao/coverage.png)
 
+6. Bônus: É possível também testar error no código com o comando `npm run lint` !
+
 ------------
 
 Observação interessante: Graças ao Docker, o node_modules que comumente fica na raiz do projeto, agora está dentro do container docker.
