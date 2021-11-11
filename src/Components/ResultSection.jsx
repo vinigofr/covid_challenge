@@ -17,7 +17,7 @@ function ResultSection({ data }) {
             <th>N. do dia</th>
             <th>Data</th>
             <th>Casos totais</th>
-            <th>Novos</th>
+            <th>Novos casos</th>
           </tr>
           {itemsToRender
             .map(({ date, total_cases: totalCases, new_cases: newCases }, index) => (
