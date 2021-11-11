@@ -11,8 +11,8 @@ function ResultSection({ data }) {
     <div className="result-section">
       <SearchOptions maxDays={data.length} />
       <h1>Faça uma consulta acima, os resultados aparecerão abaixo:</h1>
-      <div>
-        <thead role="table">
+      <table>
+        <thead>
           <tr>
             <th>N. do dia</th>
             <th>Data</th>
@@ -29,7 +29,7 @@ function ResultSection({ data }) {
               </tr>
             ))}
         </thead>
-      </div>
+      </table>
     </div>
   );
 }
