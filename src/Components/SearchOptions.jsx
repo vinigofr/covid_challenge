@@ -24,7 +24,7 @@ function SearchOptions({ maxDays }) {
           if (verifyDay(day, maxDays)) {
             setCurrentDay(day);
           } else {
-            alert(`Dia invalido! Digite dias entre 1 e ${maxDays}`);
+            alert(`Dia inválido! Digite dias entre 1 e ${maxDays}`);
           }
           setDay('');
         }}
