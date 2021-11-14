@@ -17,7 +17,7 @@ function Main() {
       .then((response) => response.json())
       .then((OwidData) => {
         const data = OwidData.OWID_WRL.data;
-        setData(data.splice(data.lenght - 14));
+        setData(data.slice(data.lenght - 14));
         setLoad(false);
       })
       .catch(() => alert('Erro ao carregar dados'));
