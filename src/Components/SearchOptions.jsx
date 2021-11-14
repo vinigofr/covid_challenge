@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Context from '../Context/Context';
 import verifyDay from '../Helpers/VerifyDay';
 
@@ -24,7 +23,7 @@ function SearchOptions() {
           if (verifyDay(day)) {
             setCurrentDay(day);
           } else {
-            alert("Dia inválido! Digite um dia maior que 1");
+            alert('Dia inválido! Digite um dia maior que 1');
           }
           setDay('');
         }}
