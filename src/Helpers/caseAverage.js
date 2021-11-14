@@ -1,3 +1,5 @@
+import manageDate from './manageDate';
+
 function main(covidCases, MAX_DAYS) {
   const newPrevist = [];
   const copyCases = [...covidCases];
@@ -11,15 +13,20 @@ function main(covidCases, MAX_DAYS) {
       .reduce((acc, curr) => acc + curr.new_cases, 0) / rangeOfCases.length);
 
     // Manda o valor gerado em rangeOfCases para o array copyCases, para calculos futuros
-    copyCases.push({ new_cases: casesAverage });
-    return casesAverage;
+    const lastItemOfCases = rangeOfCases[rangeOfCases.length - 1];
+
+    const lastItemGeneratedOfPrevist = {
+      new_cases: casesAverage,
+      total_cases: lastItemOfCases.total_cases + casesAverage,
+      date: manageDate(lastItemOfCases.date),
+    };
+
+    copyCases.push(lastItemGeneratedOfPrevist);
+    newPrevist.push(lastItemGeneratedOfPrevist);
   };
 
-  for (let i = 0; i < MAX_DAYS; i += 1) {
-    const average = getTheAverage();
-    newPrevist.push(average);
-  }
-  console.log(copyCases);
+  for (let i = 0; i < MAX_DAYS; i += 1) getTheAverage();
+
   return newPrevist;
 }
 export default main;
