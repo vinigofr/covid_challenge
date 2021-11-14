@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Context from '../Context/Context';
 import verifyDay from '../Helpers/VerifyDay';
 
-function SearchOptions({ maxDays }) {
+function SearchOptions() {
   const [day, setDay] = React.useState('');
   const { setCurrentDay } = React.useContext(Context);
 
@@ -15,18 +15,16 @@ function SearchOptions({ maxDays }) {
         type="number"
         min="1"
         value={day}
-        max={maxDays}
         onChange={(e) => setDay(e.target.value)}
-        placeholder={`Max de dias: ${maxDays}`}
       />
       <button
         type="button"
         className="search-button"
         onClick={() => {
-          if (verifyDay(day, maxDays)) {
+          if (verifyDay(day)) {
             setCurrentDay(day);
           } else {
-            alert(`Dia inválido! Digite dias entre 1 e ${maxDays}`);
+            alert("Dia inválido! Digite um dia maior que 1");
           }
           setDay('');
         }}
@@ -38,7 +36,3 @@ function SearchOptions({ maxDays }) {
 }
 
 export default SearchOptions;
-
-SearchOptions.propTypes = {
-  maxDays: PropTypes.number.isRequired,
-};

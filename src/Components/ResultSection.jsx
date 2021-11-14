@@ -9,7 +9,7 @@ function ResultSection({ data }) {
 
   return (
     <div className="result-section">
-      <SearchOptions maxDays={data.length} />
+      <SearchOptions />
       <h1>Faça uma consulta acima, os resultados aparecerão abaixo:</h1>
       <table>
         <thead>
