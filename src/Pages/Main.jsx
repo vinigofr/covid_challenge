@@ -16,8 +16,7 @@ function Main() {
     await fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
       .then((response) => response.json())
       .then((OwidData) => {
-        const data = OwidData.OWID_WRL.data;
-        setData(data.slice(data.lenght - 14));
+        setData(OwidData.OWID_WRL.data);
         setLoad(false);
       })
       .catch(() => alert('Erro ao carregar dados'));
