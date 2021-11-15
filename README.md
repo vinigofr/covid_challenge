@@ -9,7 +9,7 @@ JavaScript ES6,
 ```
 ------------
 ## Neste projeto é possível:
-1. Saber o número de casos de COVID-19 a partir do primeiro dia até o momento atual utilizando uma entrada D, onde D = Inteiro que vai de 1 até número de dias total da pandemia.
+1. Saber uma possível previsão de casos de COVID-19 a partir de um número de dias. Esse número deve ser um inteiro maior que 0.
 
 2. Testar a aplicação através de testes com comandos via terminal.
 
@@ -66,6 +66,12 @@ Pode ser que em outras distribuições Linux o `sh` seja substituído por `/bin/
 6. Bônus: É possível também testar error no código com o comando `npm run lint` !
 
 ------------
+
+# Fonte de conhecimento:
+Todos os dados usados nesta aplicação para fazer previsões foram obtidos em conteúdos da página [Our World In Data](https://ourworldindata.org/coronavirus)
+
+------------
+
 
 Observação interessante: Graças ao Docker, o node_modules que comumente fica na raiz do projeto, agora está dentro do container docker.
 
