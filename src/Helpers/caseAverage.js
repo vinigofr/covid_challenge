@@ -4,7 +4,7 @@ function newPredictions(covidCases, MAX_DAYS) {
   const predictions = [];
   const copyCases = [...covidCases];
 
-  const getTheAverage = () => {
+  function getTheAverage () {
     // Obtém os últimos 14 dias de casos
     const rangeOfCases = copyCases.slice(copyCases.length - 14);
 
