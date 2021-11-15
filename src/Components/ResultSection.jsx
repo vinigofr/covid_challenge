@@ -2,14 +2,19 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import SearchOptions from './SearchOptions';
 import Context from '../Context/Context';
+import newPredictions from '../Helpers/caseAverage';
 
 function ResultSection({ data }) {
   const { currentDay } = useContext(Context);
-  const itemsToRender = data.filter((_item, index) => index < currentDay);
+  const [itemsToRender, setItemsToRender] = React.useState([]);
+
+  React.useEffect(() => {
+    setItemsToRender(newPredictions(data, currentDay));
+  }, [currentDay]);
 
   return (
     <div className="result-section">
-      <SearchOptions maxDays={data.length} />
+      <SearchOptions />
       <h1>Faça uma consulta acima, os resultados aparecerão abaixo:</h1>
       <table>
         <thead>

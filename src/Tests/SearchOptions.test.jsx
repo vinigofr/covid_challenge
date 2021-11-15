@@ -38,7 +38,7 @@ describe('Testa o componente SearchOptions.jsx, que faz parte da tela inicial qu
       expect(inputNumber).toBeInTheDocument();
       expect(inputNumber).toHaveAttribute('type', 'number');
       expect(inputNumber).toHaveAttribute('min', '1');
-      expect(inputNumber).toHaveAttribute('max', covidCasesData.length.toString());
+      // expect(inputNumber).toHaveAttribute('max', covidCasesData.length.toString());
     });
   });
 
@@ -63,6 +63,6 @@ describe('Testa o componente SearchOptions.jsx, que faz parte da tela inicial qu
       fireEvent.click(screen.getByText('Buscar'));
     });
     expect(window.alert).toHaveBeenCalledTimes(1);
-    expect(window.alert).toHaveBeenCalledWith(`Dia inválido! Digite dias entre 1 e ${covidCasesData.length}`);
+    expect(window.alert).toHaveBeenCalledWith(`Dia inválido! Digite um dia maior que 1`);
   });
 });
