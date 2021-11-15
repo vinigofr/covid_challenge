@@ -11,10 +11,14 @@ function Header() {
         <h3 className="subtitle-header">Desafio D3 Company</h3>
       </div>
       <div>
-        <p>
-          Esta aplicação é alimentada por:
-          <a href={URL} target="_blank" rel="noreferrer">{` ${SITE_NAME}`}</a>
-        </p>
+        <a
+          className="info-source"
+          href={URL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {`Esta aplicação é alimentada por ${SITE_NAME}`}
+        </a>
       </div>
     </header>
   );
