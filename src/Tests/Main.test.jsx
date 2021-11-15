@@ -19,11 +19,11 @@ describe('Testa o componente Main.jsx, que faz parte da tela inicial', () => {
     jest.restoreAllMocks();
   });
 
-  it('Verifica se na página tem um header nível 1 com o texto "Como estão os casos de COVID-19 no mundo?"', async () => {
+  it('Verifica se na página tem um header nível 1 com o texto "Como estarão os casos de COVID-19 no mundo?"', async () => {
     await act(async () => { render(<App />); });
     const h1 = screen.getAllByRole('heading', { level: 1 });
     expect(h1[0]).toBeInTheDocument();
-    expect(h1[0]).toHaveTextContent('Como estão os casos de COVID-19 no mundo?');
+    expect(h1[0]).toHaveTextContent('Como estarão os casos de COVID-19 no mundo?');
   });
 
   it('Verifica se após o retorno da API, uma tabela é renderizada', async () => {
