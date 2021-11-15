@@ -1,6 +1,6 @@
 import manageDate from './manageDate';
 
-function main(covidCases, MAX_DAYS) {
+function newPredictions(covidCases, MAX_DAYS) {
   const newPrevist = [];
   const copyCases = [...covidCases];
 
@@ -15,12 +15,14 @@ function main(covidCases, MAX_DAYS) {
     // Manda o valor gerado em rangeOfCases para o array copyCases, para calculos futuros
     const lastItemOfCases = rangeOfCases[rangeOfCases.length - 1];
 
+    // Gera um objeto semelhante com o que é retornado na API
     const lastItemGeneratedOfPrevist = {
       new_cases: casesAverage,
       total_cases: lastItemOfCases.total_cases + casesAverage,
       date: manageDate(lastItemOfCases.date),
     };
 
+    // Manda
     copyCases.push(lastItemGeneratedOfPrevist);
     newPrevist.push(lastItemGeneratedOfPrevist);
   };
@@ -29,4 +31,4 @@ function main(covidCases, MAX_DAYS) {
 
   return newPrevist;
 }
-export default main;
+export default newPredictions;
