@@ -1,7 +1,7 @@
 import manageDate from './manageDate';
 
 function newPredictions(covidCases, MAX_DAYS) {
-  const newPrevist = [];
+  const predictions = [];
   const copyCases = [...covidCases];
 
   const getTheAverage = () => {
@@ -24,11 +24,11 @@ function newPredictions(covidCases, MAX_DAYS) {
 
     // Manda
     copyCases.push(lastItemGeneratedOfPrevist);
-    newPrevist.push(lastItemGeneratedOfPrevist);
+    predictions.push(lastItemGeneratedOfPrevist);
   };
 
   for (let i = 0; i < MAX_DAYS; i += 1) getTheAverage();
 
-  return newPrevist;
+  return predictions;
 }
 export default newPredictions;
