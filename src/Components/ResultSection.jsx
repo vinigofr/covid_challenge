@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import SearchOptions from './SearchOptions';
 import Context from '../Context/Context';
-import main from '../Helpers/caseAverage';
+import newPredictions from '../Helpers/caseAverage';
 
 function ResultSection({ data }) {
   const { currentDay } = useContext(Context);
   const [itemsToRender, setItemsToRender] = React.useState([]);
 
   React.useEffect(() => {
-    setItemsToRender(main(data, currentDay));
+    setItemsToRender(newPredictions(data, currentDay));
   }, [currentDay]);
 
   return (
