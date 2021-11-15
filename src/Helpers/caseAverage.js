@@ -1,3 +1,4 @@
+// https://www.ufjf.br/epd042/files/2009/02/previsao1.pdf
 import manageDate from './manageDate';
 
 function newPredictions(covidCases, MAX_DAYS) {
