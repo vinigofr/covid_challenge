@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     app:
-        container_name: d3_challenge
+        container_name: covid_challenge
         build:
             context: .
             dockerfile: Dockerfile

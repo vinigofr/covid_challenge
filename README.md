@@ -1,4 +1,4 @@
-# Projeto D3_Challenge - COVID-19 no mundo.
+# Projeto covid_challenge - COVID-19 no mundo.
 ------------
 ## Tecnologias utilizadas no desenvolvimento:
 ```
@@ -34,16 +34,16 @@ JavaScript ES6,
 
 2. Procure uma pasta na qual você queira fazer download do projeto.
 
-3. Digite `git clone git@github.com:vinigofr/d3_challenge.git` e aguarde o download.
+3. Digite `git clone git@github.com:vinigofr/covid_challenge.git` e aguarde o download.
 
-4. Ao baixar, digite no terminal `cd d3_challenge`, você poderá observar os arquivos do projeto. (src, package.json...).
+4. Ao baixar, digite no terminal `cd covid_challenge`, você poderá observar os arquivos do projeto. (src, package.json...).
 
 5. Precisamos criar o Container onde ficará nosso servidor React. Ele será criado a partir do arquivo `Dockerfile` que se encontra dentro da pasta do projeto.
 
-6. Já dentro da pasta `d3_challenge` digite: `sudo docker-compose up -d --build`. Este comando instalará todas as dependências necessárias para iniciar o projeto em um container docker.
+6. Já dentro da pasta `covid_challenge` digite: `sudo docker-compose up -d --build`. Este comando instalará todas as dependências necessárias para iniciar o projeto em um container docker.
 
 7. Se tudo ocorrer corretamente, você verá essa seguinte mensagem no terminal:
-![Sucesso na containerização](https://github.com/vinigofr/d3_challenge/blob/documentacao/success.png)
+![Sucesso na containerização](https://github.com/vinigofr/covid_challenge/blob/documentacao/success.png)
 
 8. Após a execução do comando do passo 5 terminar, um servidor local abrirá no endereço: http://localhost:3001 (O Docker está consumindo a porta 3000 localmente e nos disponibiliza a 3001).
 
@@ -54,16 +54,16 @@ JavaScript ES6,
 # Testando a aplicação:
 1. Abra um novo terminal que direcione para a pasta do projeto.
 
-2. Dentro da pasta, execute o comando: `sudo docker exec -it d3_challenge sh`.
+2. Dentro da pasta, execute o comando: `sudo docker exec -it covid_challenge sh`.
 Pode ser que em outras distribuições Linux o `sh` seja substituído por `/bin/bash`.
 
 3. Após executar o comando, você terá acesso ao "terminal" interno daquele container no docker. Então alguns comandos Unix/Bash são compatíveis ali.
 
 4. O primeiro comando será o `npm test`. Ele deve retornar todas as asserções funcionando corretamente:
-![Todos os testes funcionando corretamente](https://github.com/vinigofr/d3_challenge/blob/documentacao/test_success.png)
+![Todos os testes funcionando corretamente](https://github.com/vinigofr/covid_challenge/blob/documentacao/test_success.png)
 
 5. O segundo comando será o `npm run test-coverage`. Ele deve retornar a porcentagem de cobertura dos testes, que é de 100%:
-![100% de cobertura](https://github.com/vinigofr/d3_challenge/blob/documentacao/coverage.png)
+![100% de cobertura](https://github.com/vinigofr/covid_challenge/blob/documentacao/coverage.png)
 
 6. Bônus: É possível também testar error no código com o comando `npm run lint` !
 
